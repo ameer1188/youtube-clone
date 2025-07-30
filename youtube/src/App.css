@@ -53,9 +53,6 @@ nav{
 .search-btn >svg{
   background-color: #1e1e1e;
 }
-.search-btn:hover{
-  background-color: #2a2a2a;
-}
 .mic-btn{
   margin-left: 16px;
   background-color: #1e1e1e;
@@ -77,6 +74,7 @@ nav{
   align-items: center;
   justify-content: center;
   width: 100px;
+  margin-right: 10px;
 }
 .create-btn > svg{
   background-color: #1e1e1e;
@@ -86,4 +84,33 @@ nav{
   background-color: #1e1e1e;
   padding: 2px 3px;
   font-weight: bold;
+}
+.notification-btn{
+  position: relative;
+  width: 30px;
+  height: 30px;
+  border: none;
+  background-color: #1e1e1e;
+  border: 1px solid #333;
+  display: flex;
+  border-radius: 50%;
+  overflow: hidden;
+  align-items: center;
+  justify-content: center;
+}
+.notification-btn >svg{
+  width: 24px;
+  background-color: #1e1e1e;
+}
+.notification-btn > span{
+  background-color: #e50914;
+  color: white;
+  position: absolute;
+  top: 2px;
+  right: 2px;
+  font-size: 10px;
+  font-weight: bold;
+  padding: 2px 2px;
+  border-radius: 999px;
+  line-height: 1;
 }
