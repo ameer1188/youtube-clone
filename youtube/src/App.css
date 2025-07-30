@@ -5,8 +5,9 @@
   padding: 0;
 }
 nav{
-  display: flex;
-  padding: 10px;
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  padding: 10px 16px;
 }
 .sideBarLogo{
   width: 30px;
@@ -26,7 +27,7 @@ nav{
   border: 1px solid #333;
   border-radius: 999px;
   overflow: hidden;
-  width: 300px;
+  width: 450px;
   height: 30px;
   max-width: 600px;
   padding: 4px;
@@ -40,6 +41,7 @@ nav{
   outline: none;
   color: white;
   font-size: 16px;
+  
 }
 .search-btn{
   background-color: #1e1e1e;
@@ -97,6 +99,7 @@ nav{
   overflow: hidden;
   align-items: center;
   justify-content: center;
+  margin-right: 10px;
 }
 .notification-btn >svg{
   width: 24px;
@@ -113,4 +116,29 @@ nav{
   padding: 2px 2px;
   border-radius: 999px;
   line-height: 1;
+}
+.profile{
+  border-radius: 50%;
+  border: none;
+  width: 30px;
+  height: 30px;
+
+}
+.profile > svg{
+  width: fit-content;
+}
+.group-1{
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.group-2{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.group-3{
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
 }
