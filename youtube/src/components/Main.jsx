@@ -1,10 +1,9 @@
+import SideBar from "./sidebar"
 export default function Main(){
     return(
-        <main className="main">
-            <div className="continer">
-                <div className="side-bar"></div>
-                <div className="content"></div>
-            </div>
+        <main>
+            <SideBar />
+            <div className="content"></div>
         </main>
     )
 }

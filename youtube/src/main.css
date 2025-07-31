@@ -1,6 +1,20 @@
-.main{
+main{
     display: grid;
+    grid-template-columns: 
+    repeat(9, 1fr);
+    grid-auto-rows: 75px auto;
+    grid-template-areas: 
+    "sb sb mn mn mn mn mn mn mn"
+    "sb sb mn mn mn mn mn mn mn";
+    
+}
+.side-bar{
+    grid-area: sb;
+    background-color: #fff;
+    height: 100vh;
+}
+.content{
+    grid-area: mn;
     background-color: aquamarine;
-    width: 80%;
-    height: 400px;
+    height: 100vh;
 }
