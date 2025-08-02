@@ -3,6 +3,7 @@ main{
     grid-template-columns: 1fr repeat(3, 2fr);
     grid-auto-rows: 75px auto;
     grid-template-areas: 
+    "sb fb fb fb"
     "sb mn mn mn "
     "sb mn mn mn ";
     
@@ -20,7 +21,7 @@ main{
     height: 100vh;
     width: 200px;
     position: fixed;
-    margin-top: 50px;
+    margin-top: 60px;
     overflow-y: auto;
     scrollbar-width: thin;
     scrollbar-color: #333 #181717;       

@@ -7,9 +7,12 @@
 nav{
   display: grid;
   grid-template-columns: 1fr 2fr 1fr;
+  align-items: center;
   padding: 10px 16px;
   position: fixed;
-  z-index: 1;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
 
 }
 .sideBarLogo{
@@ -126,6 +129,7 @@ nav{
   width: 30px;
   height: 30px;
 
+
 }
 .profile > svg{
   width: fit-content;
@@ -144,5 +148,6 @@ nav{
   display: flex;
   justify-content: flex-end;
   align-items: center;
+  padding-right: 20px;
 }
 
