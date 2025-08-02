@@ -17,9 +17,32 @@ main{
     "md"
     "bt";
     background-color: #181717;
-    height: fit-content;
+    height: 100vh;
     width: 200px;
+    position: fixed;
+    margin-top: 50px;
+    overflow-y: auto;
+    scrollbar-width: thin;
+    scrollbar-color: #333 #181717;       
 }
+ .sidebar::-webkit-scrollbar {
+    width: 0px;
+    background-color: transparent;
+}
+.sidebar:hover {
+  scrollbar-width: thin;
+}
+.sidebar:hover::-webkit-scrollbar {
+  width: 8px;
+}
+.sidebar:hover::-webkit-scrollbar-thumb {
+  background-color: #666;
+  border-radius: 4px;
+}
+.sidebar:hover::-webkit-scrollbar-track {
+  background: #181818;
+}
+
 .content{
     grid-area: mn;
     background-color: rgb(43, 44, 44);
@@ -28,7 +51,7 @@ main{
 .sidebar-top{
     grid-area: tp;
     display: block;
-    height: fit-content;
+    height: auto;
     padding-top: 20px;
     
 }
@@ -74,4 +97,12 @@ hr{
 }
 .sidebar-bottom{
     grid-area: bt;
+}
+.sidebar-bottom > h4{
+    display: flex;
+    justify-content: start;
+    align-content: center;
+    padding-left: 10px;
+    letter-spacing: 0.02rem;
+    font-weight: 700;
 }

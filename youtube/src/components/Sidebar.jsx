@@ -23,7 +23,7 @@ export default function SideBar(){
                 <hr/>
             </div>
             <div className="sidebar-midle">
-                <h4>you <span>
+                <h4>you<span>
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
                     <path fill="currentColor" d="m13.292 12l-4.6-4.6l.708-.708L14.708 12L9.4 17.308l-.708-.708z"/></svg>
                     </span>
@@ -72,7 +72,17 @@ export default function SideBar(){
                 <hr />
             </div>
             <div className="sidebar-bottom">
-
+                <h4>Explore</h4>
+                <button className="btn">Shopping</button>
+                <button className="btn">Music</button>
+                <button className="btn">Movie</button>
+                <button className="btn">Live</button>
+                <button className="btn">Gaming</button>
+                <button className="btn">News</button>
+                <button className="btn">Sports</button>
+                <button className="btn">Courses</button>
+                <button className="btn">Fashion & Beauty</button>
+                <button className="btn">Podcasts</button>
             </div>
         </div>
     )
