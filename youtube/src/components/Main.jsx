@@ -1,11 +1,12 @@
 import SideBar from "./sidebar"
 import Filterbar from "./Filterbar"
+import Content from "./Content"
 export default function Main(){
     return(
         <main>
             <SideBar />
             <Filterbar />
-            <div className="content"></div>
+            <Content />
         </main>
     )
 }

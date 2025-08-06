@@ -12,9 +12,15 @@ export default function Filterbar(){
         <button>Mixes</button>
         <button>Security hackers</button>
         <button>Study skills</button>
-        <button>hello</button>
-        <button>hello</button>
-        <button>hello</button>
+        <button>Action Thrillers</button>
+        <button>Gadgets</button>
+        <button>Indian Music</button>
+        <button>Animation</button>
+        <button>Recently Updated</button>
+        <button>Watched</button>
+        <button>New to you</button>
+        <button>Trending</button>
+        <button>Film criticism</button>
         </div>
         </>
     )

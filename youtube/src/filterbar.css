@@ -5,8 +5,13 @@
     left: 200px;
     background-color: transparent;
     width: 100vw;
+    overflow-x: auto;
+    scrollbar-color: transparent;
+    scrollbar-width: none;
+
 }
 .filterbar > button{
+    white-space: nowrap;
     height: 30px;
     width: auto;
     padding: 2px 8px;
@@ -17,4 +22,5 @@
     align-items: center;
     align-content: center;
     letter-spacing: .05rem;
+    
 }
