@@ -1,26 +1,42 @@
-.filterbar{
-    display: flex;
-    position: fixed;
-    top: 80px;
-    left: 200px;
-    background-color: transparent;
-    width: 100vw;
-    overflow-x: auto;
-    scrollbar-color: transparent;
-    scrollbar-width: none;
+.filterbar {
+  display: flex;
+  position: fixed;
+  top: 80px;
+  left: 200px;
+  right: 0;
+  background-color: transparent;
+  padding: 8px 12px;
+  overflow-x: auto;
+  gap: 8px;
+  z-index: 10;
 
+  /* Hide scrollbar – Firefox */
+  scrollbar-width: none;
+
+  /* Hide scrollbar – WebKit */
 }
-.filterbar > button{
-    white-space: nowrap;
-    height: 30px;
-    width: auto;
-    padding: 2px 8px;
-    margin: 2px 4px;
-    border: none;
-    border-radius: 8px;
-    font-size: 12px;
-    align-items: center;
-    align-content: center;
-    letter-spacing: .05rem;
-    
+
+.filterbar::-webkit-scrollbar {
+  display: none;
+}
+
+.filterbar > button {
+  white-space: nowrap;
+  background-color: #333;
+  color: #fff;
+  height: 30px;
+  padding: 2px 12px;
+  border: none;
+  border-radius: 8px;
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  letter-spacing: 0.05rem;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.filterbar > button:hover {
+  background-color: #444;
 }
