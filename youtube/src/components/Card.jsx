@@ -1,4 +1,28 @@
-import React from "react"
+
+export default function Card(props){
+  return (
+    <div class="card">
+      <div class="thumbnail">
+        <video src={props.thumbnail} controls></video>
+      </div>
+      <div class="video-info">
+        <div class="text-info">
+          <h3 class="video-title">{props.title}</h3>
+          <p class="channel-name">{props.channel}</p>
+          <p class="views-date">{props.views}</p>
+        </div>
+      </div>
+    </div>
+  )
+}
+
+
+
+
+
+
+
+
 
 const videoData = [
   {
@@ -29,19 +53,4 @@ const videoData = [
   }
 ]
 
-export default function Content() {
-  return (
-    <div className="content">
-      {videoData.map((video, index) => (
-        <div className="card" key={index}>
-          <img src={video.thumbnail} alt="Thumbnail" />
-          <h4>{video.title}</h4>
-          <p>{video.channel}</p>
-          <p>{video.views}</p>
-          <p>{video.timeAgo || video.duration}</p>
-          <span>{video.overlay}</span>
-        </div>
-      ))}
-    </div>
-  )
-}
+
