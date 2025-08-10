@@ -1,14 +1,14 @@
 .filterbar {
+  height: 30px;
+  width: 100%;
+  padding: 20px;
+  background: #222;
+  color: #fff;  
   display: flex;
-  position: fixed;
-  top: 80px;
-  left: 200px;
-  right: 0;
   background-color: transparent;
-  padding: 8px 12px;
   overflow-x: auto;
   gap: 8px;
-  z-index: 10;
+
 
   /* Hide scrollbar – Firefox */
   scrollbar-width: none;
@@ -20,16 +20,16 @@
   display: none;
 }
 
-.filterbar > button {
+.filterbtn{
   white-space: nowrap;
   background-color: #333;
   color: #fff;
+  width: auto;
   height: 30px;
   padding: 2px 12px;
   border: none;
   border-radius: 8px;
   font-size: 12px;
-  display: flex;
   align-items: center;
   justify-content: center;
   letter-spacing: 0.05rem;
@@ -37,6 +37,6 @@
   transition: background-color 0.2s ease;
 }
 
-.filterbar > button:hover {
+.filterbtn:hover {
   background-color: #444;
 }

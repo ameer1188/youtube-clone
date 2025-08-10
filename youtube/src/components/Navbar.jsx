@@ -1,5 +1,5 @@
-import React from "react";
-
+import '../main.css'
+import Filterbar from "./Filterbar";
 export default function Nav() {
   return (
     <header>
@@ -113,6 +113,7 @@ export default function Nav() {
           </div>
         </div>
       </nav>
+      <Filterbar className="filterbar" />
     </header>
   );
 }

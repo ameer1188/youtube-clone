@@ -1,17 +1,39 @@
-main {
+#root{
   display: grid;
-  grid-template-columns: 1fr repeat(3, 3fr);
-  grid-template-rows: 75px auto 75px;
+  grid-template-columns: 200px 1fr;
+  grid-template-rows: 100px auto;
   grid-template-areas:
-    "sb fb fb fb"
-    "sb mn mn mn"
-    "sb mn mn mn";
+    "nv nv" 
+    "sb nv"
+    "sb mn"
+    "sb mn"
+;
   min-height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+header{
+  height: 100px;
+  padding-bottom: 10px;
+  grid-area: nv;
+  position: fixed;
+  display: grid;
+  grid-template-rows: 80px auto;
+  grid-template-areas:
+  "mnv"
+  "ftb";
+
+}
+nav{
+  position: fixed;
+  z-index: 2;
+  grid-area: mnv;
 }
 
 /* Sidebar styles */
 .side-bar {
   grid-area: sb;
+  z-index: 1;
   display: grid;
   grid-template-rows: auto 1fr auto;
   grid-template-areas:
@@ -19,9 +41,9 @@ main {
     "md"
     "bt";
   background-color: #181717;
-  width: 200px;
+  width: auto;
   position: fixed;
-  top: 60px;
+  top: 40px;
   bottom: 0;
   left: 0;
   overflow-y: auto;
@@ -128,12 +150,8 @@ hr {
   font-weight: 700;
   color: #fff;
 }
-
-/* Filter bar */
-.filterbar {
-  grid-area: fb;
-  height: auto;
-  padding: 10px;
-  background: #222;
-  color: #fff;
+.filterbar{
+  grid-area: ftb;
 }
+
+
