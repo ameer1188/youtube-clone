@@ -1,4 +1,4 @@
-#root{
+.main-page{
   display: grid;
   grid-template-columns: 200px 1fr;
   grid-template-rows: 100px auto;
@@ -13,12 +13,14 @@
   padding: 0;
 }
 header{
-  height: 100px;
-  padding-bottom: 10px;
+  height: auto;
+  width: 100%;
+  padding-bottom: 0;
+  box-sizing: border-box;
   grid-area: nv;
   position: fixed;
   display: grid;
-  grid-template-rows: 80px auto;
+  grid-template-rows: 80px 20px;
   grid-template-areas:
   "mnv"
   "ftb";
@@ -28,6 +30,11 @@ nav{
   position: fixed;
   z-index: 2;
   grid-area: mnv;
+}
+.filterbar{
+  grid-area: ftb;
+  width: fit-content;
+  align-content: space-between;
 }
 
 /* Sidebar styles */
@@ -150,8 +157,6 @@ hr {
   font-weight: 700;
   color: #fff;
 }
-.filterbar{
-  grid-area: ftb;
-}
+
 
 
