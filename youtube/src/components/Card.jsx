@@ -3,10 +3,11 @@ export default function Card(props){
   return (
     <div class="card">
       <div class="thumbnail">
-        <video src={props.thumbnail} controls></video>
+        <img src={props.thumbnail}/>
       </div>
       <div class="video-info">
         <div class="text-info">
+          <img src={props.channelAvatar} alt="" />
           <h3 class="video-title">{props.title}</h3>
           <p class="channel-name">{props.channel}</p>
           <p class="views-date">{props.views}</p>
