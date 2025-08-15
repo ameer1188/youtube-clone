@@ -1,11 +1,9 @@
 .main-page{
   display: grid;
-  grid-template-columns: 200px 1fr;
-  grid-template-rows: 100px auto;
+  grid-template-columns: 240px 1fr;
+  grid-template-rows: 56px 1fr;
   grid-template-areas:
     "nv nv" 
-    "sb nv"
-    "sb mn"
     "sb mn"
 ;
   min-height: 100vh;

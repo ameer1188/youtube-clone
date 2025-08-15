@@ -1,4 +1,23 @@
 .card{
-  display:inline-block;
+  border-radius: 8px;
+  background-color: rgb(36, 36, 36);
+  overflow: hidden;
   
+}
+.thumbnail{
+  width: 100%;
+  display: block;
+}
+.video-title{
+  font-size: 16px;
+  font-family: sans-serif;
+  font-weight: 100;
+  line-height: 1.5rem;
+  color: #d9d8d8;
+  margin: 8px;
+}
+.channel-name, .views-date{
+  font-size: 14px;
+  margin: 0 8px 8px;
+  color: #707070;
 }
