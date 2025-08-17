@@ -1,51 +1,47 @@
-import '../main.css'
 import Filterbar from "./Filterbar";
 export default function Nav() {
   return (
-    <header>
-      <nav className="nav">
+    <header className="bg-neutral-900 shadow-md sticky top-0 x-50 ">
+      <nav className="flex items-center justify-between px-4 py-2">
         {/* Group 1: Sidebar + Logo */}
-        <div className="group-1">
-          <div className="sidebar-toggle">
+        <div className="flex items-center space-x-4">
+          <button className="p-2 gounded-full">
             <img
-              className="side-bar-logo"
+              className="w-10 py-4 px-2"
               src="/sideMenu.svg"
               alt="side menu"
             />
-          </div>
-          <div className="youtube-logo">
+          </button>
+          <a href="#logo" className="flex items-center space-x-1">
             <img src="/logos_youtube.svg" alt="YouTube logo" />
-          </div>
+          </a>
         </div>
 
         {/* Group 2: Search bar */}
-        <div className="group-2">
-          <div className="search-bar">
-            <input
-              type="text"
-              placeholder="Search"
-              className="search-input"
-              aria-label="Search"
-            />
-            <button className="search-btn" aria-label="Search">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  fill="none"
-                  stroke="#b0b0b0"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth="1.5"
-                  d="M19 11.5a7.5 7.5 0 1 1-15 0a7.5 7.5 0 0 1 15 0m-2.107 5.42l3.08 3.08"
-                />
-              </svg>
-            </button>
-          </div>
-          <div>
+        <div className="flex items-center w-1/2">
+          <input
+            type="text"
+            placeholder="Search"
+            className="w-full border border-gray-300 rounded-1-full px-4 py-2 focus:outline-none focus:border-blue-500"
+            aria-label="Search"
+          />
+          <button className="search-btn" aria-label="Search">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+            >
+              <path
+                fill="none"
+                stroke="#b0b0b0"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth="1.5"
+                d="M19 11.5a7.5 7.5 0 1 1-15 0a7.5 7.5 0 0 1 15 0m-2.107 5.42l3.08 3.08"
+              />
+            </svg>
+          </button>
             <button className="mic-btn" aria-label="Voice Search">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -59,11 +55,10 @@ export default function Nav() {
                 />
               </svg>
             </button>
-          </div>
         </div>
 
         {/* Group 3: Create, Notification, Profile */}
-        <div className="group-3">
+        <div className="flex col-start-3 col-end-4 w-1/3 align-cente">
           <div>
             <button className="create-btn" aria-label="Create">
               <svg
